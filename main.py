@@ -157,7 +157,7 @@ try:
             else:
                 print("skip")
             result.append(port)
-        except (OSError, serial.SerialException) as exc:
+        except (OSError, serial.SerialException):
             pass
 
     if s is None:
